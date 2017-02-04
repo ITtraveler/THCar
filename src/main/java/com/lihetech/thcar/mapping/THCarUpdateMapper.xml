@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lihetech.thcar.dao.THCarUpdateDao">
+	<!-- 更新user -->
+	<update id="updateUser" parameterType="Map">
+		UPDATE th_user
+		<set>
+			<if test="telephone != null">telephone=#{telephone},</if>
+			<if test="nickname != null">nickname=#{nickname},</if>
+			<if test="openID != null">openID=#{openID},</if>
+			<if test="isVIP != null">isVIP=#{isVIP}</if>
+		</set>
+		WHERE uid=#{uid}
+	</update>
+
+	<!-- 更新车辆信息 -->
+	<update id="updateCarInfo" parameterType="Map">
+		UPDATE car_info
+		<set>
+			<if test="occupied_uid != null">occupied_uid=#{occupied_uid},</if>
+			<if test="car_num != null">car_num=#{car_num},</if>
+			<if test="message != null">message=#{message},</if>
+			<if test="telephone != null">telephone=#{telephone},</if>
+			<if test="protecting != null">protecting=#{protecting}</if>
+		</set>
+		WHERE qid=#{qid}
+	</update>
+	
+	<!-- 更新分享记录 -->
+	<update id="updateShare" parameterType="Map">
+		UPDATE th_share SET invite_success_count=#{count} WHERE uid=#{uid} and share_type=#{share_type}
+	</update>
+</mapper>

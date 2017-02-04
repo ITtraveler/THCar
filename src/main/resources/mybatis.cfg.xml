@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 但是如果每一个实体类都这样配置还是有点麻烦这时我们可以直接指定package的名字， mybatis会自动扫描指定包下面的javabean，并且默认设置一个别名，默认的名字为： javabean 的首字母小写的非限定类名来作为它的别名（其实别名是不去分大小写的）。也可在javabean 加上注解@Alias 来自定义别名， 例如： @Alias(student) -->
+	<typeAliases>
+		<package name="com.lihetech.thcar.entity" />
+	</typeAliases>
+	<mappers>
+		<mapper resource="com/lihetech/thcar/mapping/THCarQueryMapper.xml" />
+		<mapper resource="com/lihetech/thcar/mapping/THCarInsertMapper.xml" />
+		<mapper resource="com/lihetech/thcar/mapping/THCarUpdateMapper.xml"/>
+	</mappers>
+</configuration>
