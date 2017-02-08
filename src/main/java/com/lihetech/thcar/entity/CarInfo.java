@@ -6,9 +6,10 @@ package com.lihetech.thcar.entity;
  * @author hgs
  *
  */
+
 public class CarInfo {
 	private int id;
-	private String qid;// 二维码的一个唯一id
+	private String thid;// 二维码的一个唯一id(树洞编号)
 	private int occupied_uid;// 绑定的用户id
 	private String car_num;// 车牌号
 	private String message;// 留言
@@ -19,9 +20,9 @@ public class CarInfo {
 		// TODO Auto-generated constructor stub
 	}
 
-	public CarInfo(String qid, int occupied_uid, String car_num, String message, String telephone) {
+	public CarInfo(String thid, int occupied_uid, String car_num, String message, String telephone) {
 		super();
-		this.qid = qid;
+		this.thid = thid;
 		this.occupied_uid = occupied_uid;
 		this.car_num = car_num;
 		this.message = message;
@@ -36,12 +37,12 @@ public class CarInfo {
 		this.id = id;
 	}
 
-	public String getQid() {
-		return qid;
+	public String getThid() {
+		return thid;
 	}
 
-	public void setQid(String qid) {
-		this.qid = qid;
+	public void setThid(String thid) {
+		this.thid = thid;
 	}
 
 	public int getOccupied_uid() {
@@ -86,7 +87,7 @@ public class CarInfo {
 
 	@Override
 	public String toString() {
-		return "CarInfo [id=" + id + ", qid=" + qid + ", occupied_uid=" + occupied_uid + ", car_num=" + car_num
+		return "CarInfo [id=" + id + ", thid=" + thid + ", occupied_uid=" + occupied_uid + ", car_num=" + car_num
 				+ ", message=" + message + ", telephone=" + telephone + ", protecting=" + protecting + "]";
 	}
 

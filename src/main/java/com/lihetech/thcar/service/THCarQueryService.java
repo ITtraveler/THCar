@@ -1,4 +1,4 @@
-package com.lihetech.thcar.dao;
+package com.lihetech.thcar.service;
 
 import java.util.List;
 import java.util.Map;
@@ -9,12 +9,11 @@ import com.lihetech.thcar.entity.OperatorLog;
 import com.lihetech.thcar.entity.ShareLog;
 import com.lihetech.thcar.entity.User;
 
-public interface THCarQueryDao {
+public interface THCarQueryService {
 	//通过手机号查找用户信息(唯一)
 	User getUser(String telephone);
 	
-	//通过qid查询车辆或者通过occupied_uid进行车辆查询,通过qid查询时只有唯一俩对应的车
-	
+	//通过qid查询车辆或者通过occupied_uid进行车辆查询
 	List<CarInfo> getCarInfo(Map<String,String> map);
 	
 	//通过用户id获取分享记录	``

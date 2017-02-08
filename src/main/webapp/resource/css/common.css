@@ -1,0 +1,26 @@
+/*---全局样式---*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,span,input,pre,a,hr,button,select,option,label,address{margin:0;padding:0;border:none;}
+body{background:#fff;color:#000;font-size:12px;font-family:宋体,Arial,Verdana;}
+address{ font-style:normal; }
+ul,ol{list-style-type:none;}
+img{border:0px;}
+a{text-decoration:none;}
+a{color:#333;}
+a:hover{color:#c00; text-decoration:none;}
+
+
+.clear{clear:both; width:0px; height:0px; overflow:hidden; font-size:0px; line-height:0px; }
+.hidden{ display:none; }
+/*---float 解决IE6中日期消失问题---*/
+.floatleft{ float:left; }
+.floatright{ float:right;}
+a.fff{color:#fff;}
+a.fff:hover{color:#c00;}
+
+/*---最小高度写法兼容ie678 ff  !important ie6不执行---*/
+.Gzhmin-height {
+	min-height:100px;
+	height:auto !important; 
+	height:100px;
+	overflow:visible;
+}

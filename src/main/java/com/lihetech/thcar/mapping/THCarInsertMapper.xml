@@ -13,15 +13,15 @@
 	<!-- 添加一个车辆信息 -->
 	<insert id="insertCarInfo" parameterType="CarInfo">
 		insert into 
-		car_info(qid,occupied_uid,car_num,telephone,message)
-		values(#{qid},#{occupied_uid},#{car_num},#{telephone},#{message})
+		car_info(thid,occupied_uid,car_num,telephone,message)
+		values(#{thid},#{occupied_uid},#{car_num},#{telephone},#{message})
 	</insert>
 	
 	<!-- 添加一条挪车记录 -->
 	<insert id="insertOperatorLog" parameterType="OperatorLog">
 		insert into
-		th_log(operation_time,operator_phone,operator_uid,operator_openID,car_qid,car_phone,car_num,operator_feedback,location)
-		values(#{operation_time},#{operator_phone},#{operator_uid},#{operator_openID},#{car_qid},#{car_phone},#{car_num},#{operator_feedback},#{location})
+		th_log(operation_time,operator_phone,operator_uid,operator_openID,car_thid,car_phone,car_num,operator_feedback,location)
+		values(#{operation_time},#{operator_phone},#{operator_uid},#{operator_openID},#{car_thid},#{car_phone},#{car_num},#{operator_feedback},#{location})
 	</insert>
 	
 	<!-- 添加一条反馈信息 -->

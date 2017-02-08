@@ -25,7 +25,7 @@
 			<if test="telephone != null">telephone=#{telephone},</if>
 			<if test="protecting != null">protecting=#{protecting}</if>
 		</set>
-		WHERE qid=#{qid}
+		WHERE thid=#{thid}
 	</update>
 	
 	<!-- 更新分享记录 -->

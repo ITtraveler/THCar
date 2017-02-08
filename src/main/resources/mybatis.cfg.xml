@@ -11,5 +11,6 @@
 		<mapper resource="com/lihetech/thcar/mapping/THCarQueryMapper.xml" />
 		<mapper resource="com/lihetech/thcar/mapping/THCarInsertMapper.xml" />
 		<mapper resource="com/lihetech/thcar/mapping/THCarUpdateMapper.xml"/>
+		<!-- <mapper resource="com/lihetech/thcar/mapping/THCarOtherMapper.xml"/> -->
 	</mappers>
 </configuration>

@@ -1,0 +1,130 @@
+@import url(common.css);
+
+html, body{height:100%; font-family:"Microsoft YaHei", "微软雅黑";   }
+/*首页  */
+#homepage_car{width:3.75rem;  background-color: #dff2f7; height:100%;  margin:0 auto;        }
+#homepage_car .header{height:2.1rem;  width:100%; background-color: #ffffff; text-align:center;  overflow: hidden; position: relative;  }
+#homepage_car .header h1{ font-size:0.24rem;     }
+#homepage_car .header .button{width:2.3rem; height:0.48rem; background-color: #ff9932; margin:0 auto;  margin-top: 0.30rem; border-radius: 0.03rem; outline:none; font-size:0.16rem; color:#ffffff;   }
+#homepage_car .header .number_span{position:absolute; display: block; width:0.16rem; height:0.16rem; background-color: #189fd9; bottom:0.45rem; right:0.65rem; line-height: 0.16rem; text-align: center; color:#ffffff; font-size:0.14rem;  }
+
+/*挪车第二步*/
+
+#second_step{ width:3.75rem;  background-color:#f3f3f3; height:100%;  margin:0 auto;     }
+#second_step .leave_message{height:0.4rem; width:100%; line-height: 0.4rem; font-size: 0.16rem;       }
+#second_step .leave_message .title{margin-left:0.15rem;  color:red;    }
+#second_step .message_box{height:1rem; width:3.45rem; background-color: #ffffff; border-top: 2px solid #dddada;border-bottom:2px solid #dddada;  overflow: hidden; padding-left:0.15rem;padding-right:0.15rem; font-size:0.16rem;    } 
+#second_step .message_box .message_span{display: block; margin-top: 0.25rem;      }
+#second_step .phone_number{line-height:0.6rem; font-size: 0.16rem; margin-left:0.15rem; color:red;     }
+#second_step .input_box{width:100%; background-color:#ffffff;height:0.55rem; border-bottom:1px solid #e5e5e5; line-height:0.55rem; font-size:0.14rem;     }
+#second_step .input_box .input_span{ float: left; margin-left: 0.15rem;   }
+#second_step .input_box .input{ float:left; width: 2rem; height:100%; outline: none; font-size: 0.14rem; margin-left: 0.1rem;       }
+#second_step .input_box .validate{float:left; height:0.3rem; width:0.8rem; background-color:#ff9932; border-radius: 0.04rem; margin-top: 0.13rem;text-align:center; color:#ffffff; outline: none;   }
+#second_step .next_button{width:2.3rem; height:0.45rem; margin:0 auto; display: block; margin-top:0.35rem; background-color: #ff9932; border-radius: 0.04rem; color:#ffffff; font-size: 0.14rem;    }
+
+/*挪车第三步 */
+#three_step{width:3.75rem;  background-color:#ff9966; height:100%;  margin:0 auto;     }
+#three_step .top_side{width:2.35rem; height:1.65rem; background-color:#ffffff;  margin:0 auto; margin-top: 0.55rem;text-align:center; overflow: hidden;     }
+#three_step .side_title_span{font-size: 0.22rem;margin-top: 0.35rem; display: block; font-weight:bold; }
+#three_step .status_span{font-size:0.16rem; margin-top: 0.15rem; display: block;      }
+
+#three_step .bottom_side{width:2.35rem; height:1.65rem; background-color:#ffffff; margin:0 auto; margin-top: 0.5rem;text-align:center; overflow: hidden;        }
+#three_step .bottom_side .call_button{width:1.43rem; height:0.27rem; margin:0 auto; display: block; background-color: #ff9932; border-radius: 0.05rem; margin-top: 0.15rem; color:#ffffff; font-size: 0.14rem;       }
+#three_step .bottom_side .infor_span{ display: block; margin-top:0.15rem;   }
+
+
+/*注册第一步 */
+#register_one{  width:3.75rem;  background-color:#f3f3f3; height:100%;  margin:0 auto;     }
+#register_one .private_information{height:0.4rem; width:100%; line-height: 0.4rem; font-size: 0.14rem;        }   
+#register_one .private_information .person_information{margin-left:0.15rem; font-weight:bold;     }
+
+#register_one .input_box{width:100%; background-color:#ffffff;height:0.55rem; border-bottom:1px solid #e5e5e5; line-height:0.55rem; font-size:0.12rem;     }
+#register_one .input_box .input_span{ float: left; margin-left: 0.15rem; width:0.46rem;   }
+#register_one .input_box .input{ float:left; width: 2rem; height:100%; outline: none;  margin-left: 0.1rem;       }
+#register_one .input_box .validate{float:left; height:0.3rem; width:0.8rem; background-color:#ff9932; border-radius: 0.04rem; margin-top: 0.13rem;text-align:center; color:#ffffff; outline: none;   }
+#register_one .car_information{display: block; height:0.38rem; width:100%; line-height: 0.38rem; text-indent: 0.15rem; font-size:0.14rem; font-weight: bold;       }
+#register_one .information_box{height:0.65rem;width:100%; background-color:#ffffff; line-height: 0.65rem;          }
+#register_one .information_box .plate_number{width:1.5rem; height:0.35rem; outline: none;      }
+#register_one .next_step{width:2.3rem; height:0.45rem; display: block; margin:0 auto; background-color: #ff9932; border-radius: 0.05rem; color:#ffffff; font-size:0.12rem;  margin-top:1.2rem;       }
+
+/*注册第二部*/
+#register_two{ width:3.75rem;  background-color:#f3f3f3; height:100%;  margin:0 auto;        }
+#register_two .private_information{height:0.4rem; width:100%; line-height: 0.4rem; font-size: 0.14rem;        }   
+#register_two .private_information .person_information{margin-left:0.15rem; font-weight:bold;     }
+#register_two .inner_box{background-color:#ffffff; width:100%;   border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4;   }
+#register_two .inner_box .inner_head{height:0.55rem; line-height: 0.55rem; position: relative;     }
+#register_two .inner_box .inner_head .center_div{position: absolute; height: 100%; top:0; left:50%;  transform: translateX(-50%); -webkit-transform: translateX(-50%);   }
+#register_two .inner_box .hr{ width:3.1rem; margin:0 auto;  height:1px; background-color:#e4e4e4;   }
+#register_two .inner_box .color_div{width:3rem; height:2.5rem;  margin:0 auto; background-color: #ffffcf; margin-top:0.07rem;     }
+#register_two .inner_box .contribute_us{ height:0.4rem; width:100%; line-height: 0.4rem;  }
+#register_two .inner_box .contribute_us .contribute_link{float:right; margin-right:0.5rem;    }
+#register_two .sure_button{width:2rem; height:0.4rem; margin:0 auto; margin-top:1rem;  background-color:#ff9932;  border-radius:0.05rem; color:#ffffff; display: block;  }
+
+
+/*付费页面*/
+
+#page_pay{ width:3.75rem; background-color:#ffffff; height:100%; margin:0 auto;              }
+#page_pay .header{ width:100%;    }
+#page_pay .header .time_div{height:0.3rem; width:100%; background-color:#4a4a4a; text-align:center; line-height: 0.3rem;  color:#878787;       }
+#page_pay .header .pay_information{width:100%; background-color:#f2f1f6;  overflow:hidden;   }
+#page_pay .header .pay_information .title_span{margin-top:0.12rem;  display: block; text-align: center; font-weight: bold; font-size:0.14rem;   }
+#page_pay .header .pay_information .ticket_box{ width:300%;margin-left:-100% ; position: relative; height:0.3rem; margin-top:0.22rem;     }
+#page_pay .header .pay_information .ticket_ul{ position: absolute; transform: translateX(-50%);-webkit-transform: translateX(-50%);  left:50%; top:0; height:100%;    }
+#page_pay .header .pay_information .ticket_ul li{ height:0.2rem;width:0.6rem; line-height: 0.2rem; float: left; text-align: center; border:1px solid #8e8e90; border-radius: 0.04rem;  margin-left: 0.08rem;   }
+#page_pay .header .pay_information .ticket_ul li:first-child{margin-left: 0;    }
+#page_pay .header .pay_information .list_explain{width:1.5rem; margin:0 auto; margin-top:0.1rem; margin-bottom:0.2rem;     } 
+#page_pay .header .pay_information .list_explain li{line-height: 0.22rem;    }
+
+#page_pay .contact_div{width:3.6rem; height:0.42rem;line-height: 0.42rem; margin:0 auto; border-bottom:1px solid #dcdada;      }
+#page_pay .real_price{display: block; width:100%; height:0.42rem;line-height: 0.42rem; text-align: center; margin-top:0.8rem;  }
+#page_pay .pay_button{width:3.5rem; height:0.37rem; background-color:#28cc6d; margin:0 auto; display: block; border-radius: 0.04rem; color:#ffffff; outline: none; margin-top:0.05rem;    }
+
+/*查看二维码 */
+#myCode{width:3.75rem;  background-color:#f3f3f3; height:100%;  margin:0 auto;       }
+#myCode .private_information{height:0.4rem; width:100%; line-height: 0.4rem; font-size: 0.14rem;        }   
+#myCode .private_information .person_information{margin-left:0.15rem; font-weight:bold;     }
+#myCode .code_box{background-color: #ffffff; width:100%;  overflow: hidden;     }
+#myCode .code_box .img_box{ width:2.1rem; height:1.4rem; margin:0 auto;  margin-top:0.15rem; margin-bottom: 0.15rem; background-color: #014898;  border-radius: 0.05rem;      }
+#myCode .input_box{width:100%; background-color:#ffffff;height:0.55rem; border-bottom:1px solid #e5e5e5; line-height:0.55rem; font-size:0.12rem;     }
+#myCode .input_box .input_span{ float: left; margin-left: 0.15rem; width:0.8rem;   }
+#myCode .input_box .input{ float:left; width: 1.5rem; height:100%; outline: none;  margin-left: 0.1rem;       }
+#myCode .input_box .validate{float:right; height:0.3rem; width:0.8rem; background-color:#ff9932; border-radius: 0.04rem; margin-right:0.2rem; margin-top: 0.13rem;text-align:center; color:#ffffff; outline: none;   }
+#myCode .invite_button{width:2rem; height:0.4rem; margin:0 auto;  background-color: #ff9933; display: block; color:#ffffff; margin-top:0.6rem; border-radius: 0.05rem;     }
+
+
+
+
+
+.l{float:left; margin-left:0.1rem;   }
+
+.r{float:right; margin-right:0.1rem;  }
+
+
+
+.clearfix:before,  
+.clearfix:after {  
+  content: "";  
+  display: table;  
+}  
+.clearfix:after {  
+  clear: both;  
+}  
+.clearfix{  
+  *zoom: 1;  
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

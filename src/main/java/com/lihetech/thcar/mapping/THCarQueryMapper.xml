@@ -7,14 +7,14 @@
 		select * from th_user where
 		telephone = #{telephone}
 	</select>
-	<!-- 通过qid查询车辆，如果没有被绑定则occupied_uid、car_num、telephone将为空。 通过occupied_uid（被绑定的用户id） 
+	<!-- 通过thid查询车辆，如果没有被绑定则occupied_uid、car_num、telephone将为空。 通过occupied_uid（被绑定的用户id） 
 		进行车辆查询，如果返回为空，则未绑定任何车辆；可能返回多个车辆（当一个用户有多辆车时） -->
 	<select id="getCarInfo" resultType="CarInfo">
 		select * from car_info
 		<where>
 			<choose>
-				<when test="qid != null">
-					qid = #{qid}
+				<when test="thid != null">
+					thid = #{thid}
 				</when>
 				<when test="occupied_uid!=null">
 					occupied_uid = #{occupied_uid}
@@ -36,8 +36,8 @@
 		WHERE fb_uid={uid}
 	</select>
 
-	<!--挪车记录获取 通过operator_uid或car_qid进行获取 operator_uid 得通过openid查询是否存在该用户，来判断是否有此数据， 
-		car_qid 车主账号，将可以通过此来查询挪车记录 -->
+	<!--挪车记录获取 通过operator_uid或car_thid进行获取 operator_uid 得通过openid查询是否存在该用户，来判断是否有此数据， 
+		car_thid 车主账号，将可以通过此来查询挪车记录 -->
 	<select id="getMyTHLog" resultType="OperatorLog">
 		SELECT * FROM th_log
 		<where>
@@ -45,8 +45,8 @@
 				<when test="operator_uid != null">
 					operator_uid = #{operator_uid}
 				</when>
-				<when test="car_qid != null">
-					car_qid = #{car_qid}
+				<when test="car_thid != null">
+					car_thid = #{car_thid}
 				</when>
 			</choose>
 		</where>

@@ -1,4 +1,4 @@
-package com.lihetech.thcar.dao.impl;
+package com.lihetech.thcar.service.impl;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,15 +11,15 @@ import com.lihetech.thcar.entity.OperatorLog;
 import com.lihetech.thcar.entity.ShareLog;
 import com.lihetech.thcar.entity.User;
 
-
-public class THCarInsertDaoImpl implements THCarInsertDao {
+@Service(value = "THCarInsertServer")
+public class THCarInsertServiceImpl implements THCarInsertDao {
 	@Autowired
-	private SqlSessionTemplate sqlSession;
-	
+	private THCarInsertDao insertDao;
+
 	@Override
 	public boolean insertUser(User user) {
 		try {
-			sqlSession.getMapper(THCarInsertDao.class).insertUser(user);
+			insertDao.insertUser(user);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -30,7 +30,7 @@ public class THCarInsertDaoImpl implements THCarInsertDao {
 	@Override
 	public boolean insertOperatorLog(OperatorLog operatorLog) {
 		try {
-			sqlSession.getMapper(THCarInsertDao.class).insertOperatorLog(operatorLog);
+			insertDao.insertOperatorLog(operatorLog);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -41,7 +41,7 @@ public class THCarInsertDaoImpl implements THCarInsertDao {
 	@Override
 	public boolean insertCarInfo(CarInfo carInfo) {
 		try {
-			sqlSession.getMapper(THCarInsertDao.class).insertCarInfo(carInfo);
+			insertDao.insertCarInfo(carInfo);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -52,7 +52,7 @@ public class THCarInsertDaoImpl implements THCarInsertDao {
 	@Override
 	public boolean insertFeedback(Feedback feedback) {
 		try {
-			sqlSession.getMapper(THCarInsertDao.class).insertFeedback(feedback);
+			insertDao.insertFeedback(feedback);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -63,13 +63,12 @@ public class THCarInsertDaoImpl implements THCarInsertDao {
 	@Override
 	public boolean insertShareLog(ShareLog shareLog) {
 		try {
-			sqlSession.getMapper(THCarInsertDao.class).insertShareLog(shareLog);
+			insertDao.insertShareLog(shareLog);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
 		}
 		return true;
-	} 
-
+	}
 
 }

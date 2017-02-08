@@ -1,4 +1,4 @@
-package com.lihetech.thcar.dao.impl;
+package com.lihetech.thcar.service.impl;
 
 import java.util.List;
 import java.util.Map;
@@ -13,37 +13,38 @@ import com.lihetech.thcar.entity.Feedback;
 import com.lihetech.thcar.entity.OperatorLog;
 import com.lihetech.thcar.entity.ShareLog;
 import com.lihetech.thcar.entity.User;
+import com.lihetech.thcar.service.THCarQueryService;
 
-
-public class THCarQueryDaoImpl implements THCarQueryDao{
+@Service(value="THCarQueryServer")
+public class THCarQueryServiceImpl implements THCarQueryService{
 	@Autowired
-	private SqlSessionTemplate sqlSession;
+	private THCarQueryDao queryDao;
 
 	
 	@Override
 	public User getUser(String telephone) {
 		//return sqlSession.selectOne("com.lihetech.thcar.dao.THCarDao.getUser",telephone);
-		return sqlSession.getMapper(THCarQueryDao.class).getUser(telephone);
+		return queryDao.getUser(telephone);
 	}
 
 	@Override
 	public List<CarInfo> getCarInfo(Map<String,String> map) {
-		return sqlSession.getMapper(THCarQueryDao.class).getCarInfo(map);
+		return queryDao.getCarInfo(map);
 	}
 
 	@Override
 	public List<ShareLog> getMyShareLog(Map<String,String> map) {
-		return sqlSession.getMapper(THCarQueryDao.class).getMyShareLog(map);
+		return queryDao.getMyShareLog(map);
 	}
 
 	@Override
 	public List<Feedback> getMyFeedback(String uid) {
-		return sqlSession.getMapper(THCarQueryDao.class).getMyFeedback(uid);
+		return queryDao.getMyFeedback(uid);
 	}
 
 	@Override
 	public List<OperatorLog> getMyTHLog(Map<String,String> map) {
-		return sqlSession.getMapper(THCarQueryDao.class).getMyTHLog(map);
+		return queryDao.getMyTHLog(map);
 	}
 	
 
